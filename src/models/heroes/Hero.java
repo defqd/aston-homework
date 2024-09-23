@@ -2,7 +2,7 @@ package models.heroes;
 
 import models.enemies.Enemy;
 
-public class Hero {
+public abstract class Hero {
     private String name;
     private int strength;
 
@@ -19,8 +19,5 @@ public class Hero {
         return strength;
     }
 
-    public  void attackEnemy(Enemy enemy) {
-        System.out.printf("%s атакует!!!\n", name);
-        enemy.takeDamage(strength);
-    }
+    public abstract void attackEnemy(Enemy enemy);
 }

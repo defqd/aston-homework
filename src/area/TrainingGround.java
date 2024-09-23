@@ -10,8 +10,8 @@ public class TrainingGround {
     public static void main(String[] args) {
         var enemy = new Enemy(100);
 
-        var hero = new Hero("Steve", 10);
-        hero.attackEnemy(enemy);
+//        var hero = new Hero("Steve", 10);
+//        hero.attackEnemy(enemy);
 
         var warrior = new Warrior("Grog", 20);
         warrior.attackEnemy(enemy);
