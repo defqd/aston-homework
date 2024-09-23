@@ -17,5 +17,6 @@ public class Enemy {
 
     public void takeDamage(int damage) {
         health -= damage;
+        System.out.printf("получает %d ед.урона.\n", damage);
     }
 }

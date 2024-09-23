@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7aee9fc-d43f-475e-8303-c34869d6fbac" name="Changes" comment="feat: add warrior, mage and archer entities">
-      <change afterPath="$PROJECT_DIR$/src/models/enemies/Enemy.java" afterDir="false" />
+    <list default="true" id="e7aee9fc-d43f-475e-8303-c34869d6fbac" name="Changes" comment="feat: add enemy entity">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/area/TrainingGround.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/area/TrainingGround.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/enemies/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/enemies/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/heroes/Archer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/heroes/Archer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/heroes/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/heroes/Hero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/heroes/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/heroes/Mage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/heroes/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/heroes/Warrior.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +79,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727102483959</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: add enemy entity">
+      <option name="closed" value="true" />
+      <created>1727102697887</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1727102697887</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -91,6 +105,7 @@
     <MESSAGE value="initial" />
     <MESSAGE value="feat: add hero entity" />
     <MESSAGE value="feat: add warrior, mage and archer entities" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add warrior, mage and archer entities" />
+    <MESSAGE value="feat: add enemy entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add enemy entity" />
   </component>
 </project>
