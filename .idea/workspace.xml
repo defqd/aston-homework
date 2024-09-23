@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7aee9fc-d43f-475e-8303-c34869d6fbac" name="Changes" comment="feat: add BattleGround" />
+    <list default="true" id="e7aee9fc-d43f-475e-8303-c34869d6fbac" name="Changes" comment="feat: add a health indicator to the Hero and the opportunity to die">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/area/BattleGround.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/area/BattleGround.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/area/TrainingGround.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/area/TrainingGround.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/enemies/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/enemies/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/heroes/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/heroes/Hero.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -112,7 +118,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727103951531</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="feat: add a health indicator to the Hero and the opportunity to die">
+      <option name="closed" value="true" />
+      <created>1727104207713</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1727104207713</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -135,6 +149,7 @@
     <MESSAGE value="feat: Hero and attackEnemy are abstract" />
     <MESSAGE value="feat: add Mortal interface" />
     <MESSAGE value="feat: add BattleGround" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add BattleGround" />
+    <MESSAGE value="feat: add a health indicator to the Hero and the opportunity to die" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add a health indicator to the Hero and the opportunity to die" />
   </component>
 </project>

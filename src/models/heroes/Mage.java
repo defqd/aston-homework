@@ -3,8 +3,8 @@ package models.heroes;
 import models.enemies.Enemy;
 
 public class Mage extends Hero{
-    public Mage(String name, int strength) {
-        super(name, strength);
+    public Mage(String name, int strength, int health) {
+        super(name, strength, health);
     }
 
     @Override

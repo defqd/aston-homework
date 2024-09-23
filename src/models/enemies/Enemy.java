@@ -1,11 +1,16 @@
 package models.enemies;
 
 import interfaces.Mortal;
+import models.heroes.Hero;
 
 public class Enemy implements Mortal {
+    private String name;
+    private int strength;
     private int health;
 
-    public Enemy(int health) {
+    public Enemy(String name, int strength, int health) {
+        this.name = name;
+        this.strength = strength;
         this.health = health;
     }
 
@@ -17,13 +22,27 @@ public class Enemy implements Mortal {
         this.health = health;
     }
 
+    public String getName() {
+        return  name;
+    }
+
+    public int getStrength() {
+        return strength;
+    }
+
     public void takeDamage(int damage) {
-        health -= damage;
-        System.out.printf("получает %d ед.урона.\n", damage);
+        this.health -= damage;
+        System.out.printf("%s получил %d ед.урона. ", name, damage);
+        System.out.printf("У %s осталось здоровья: %d\n\n", name, health);
     }
 
     @Override
     public boolean isAlive() {
         return health > 0;
+    }
+
+    public void attackHero(Hero hero) {
+        System.out.printf("%s атакует!!!\n", getName());
+        hero.takeDamage(getStrength());
     }
 }
