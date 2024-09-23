@@ -12,6 +12,6 @@ public class Hero {
     }
 
     public  void attackEnemy() {
-        System.out.printf("%s атакует!!!", name);
+        System.out.printf("%s атакует!!!\n", name);
     }
 }
