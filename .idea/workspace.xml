@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7aee9fc-d43f-475e-8303-c34869d6fbac" name="Changes" comment="feat: add Hero attackEnemy and Enemy takeDamage methods">
-      <change beforePath="$PROJECT_DIR$/src/area/TrainingGround.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/area/TrainingGround.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/heroes/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/heroes/Hero.java" afterDir="false" />
-    </list>
+    <list default="true" id="e7aee9fc-d43f-475e-8303-c34869d6fbac" name="Changes" comment="feat: add BattleGround" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +32,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.BattleGround.executor": "Run",
     "Application.TrainingGround.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -90,7 +88,31 @@
       <option name="project" value="LOCAL" />
       <updated>1727103445831</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: Hero and attackEnemy are abstract">
+      <option name="closed" value="true" />
+      <created>1727103717659</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1727103717659</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: add Mortal interface">
+      <option name="closed" value="true" />
+      <created>1727103820509</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1727103820509</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: add BattleGround">
+      <option name="closed" value="true" />
+      <created>1727103951531</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1727103951531</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -110,6 +132,9 @@
     <MESSAGE value="feat: add warrior, mage and archer entities" />
     <MESSAGE value="feat: add enemy entity" />
     <MESSAGE value="feat: add Hero attackEnemy and Enemy takeDamage methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add Hero attackEnemy and Enemy takeDamage methods" />
+    <MESSAGE value="feat: Hero and attackEnemy are abstract" />
+    <MESSAGE value="feat: add Mortal interface" />
+    <MESSAGE value="feat: add BattleGround" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add BattleGround" />
   </component>
 </project>
