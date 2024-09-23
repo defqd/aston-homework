@@ -9,7 +9,12 @@ public class Warrior extends Hero{
 
     @Override
     public void attackEnemy(Enemy enemy) {
-        System.out.printf("Воин %s атакует!!!\n", getName());
-        enemy.takeDamage(getStrength());
+        if(enemy.isAlive()) {
+            System.out.printf("Воин %s атакует!!!\n", getName());
+            enemy.takeDamage(getStrength());
+        }
+        else {
+            System.out.printf("%s мертв!\n", enemy.getName());
+        }
     }
 }

@@ -3,7 +3,7 @@ package models.enemies;
 import interfaces.Mortal;
 import models.heroes.Hero;
 
-public class Enemy implements Mortal {
+public abstract class Enemy implements Mortal {
     private String name;
     private int strength;
     private int health;
@@ -30,6 +30,10 @@ public class Enemy implements Mortal {
         return strength;
     }
 
+    public void setStrength(int strength) {
+        this.strength = strength;
+    }
+
     public void takeDamage(int damage) {
         this.health -= damage;
         System.out.printf("%s получил %d ед.урона. ", name, damage);
@@ -41,8 +45,6 @@ public class Enemy implements Mortal {
         return health > 0;
     }
 
-    public void attackHero(Hero hero) {
-        System.out.printf("%s атакует!!!\n", getName());
-        hero.takeDamage(getStrength());
-    }
+    public abstract void attackHero(Hero hero);
+    public abstract  void useAbility();
 }

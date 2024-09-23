@@ -1,25 +1,48 @@
 package area;
 
-import models.enemies.Enemy;
+import models.enemies.Smorc;
+import models.enemies.Zombie;
 import models.heroes.Archer;
 import models.heroes.Mage;
 import models.heroes.Warrior;
 
 public class BattleGround {
     public static void main(String[] args) {
-        var enemy = new Enemy("Zombie", 25, 100);
+//        var zombie = new Zombie("Shaun", 25, 100);
+//
+//        var warrior = new Warrior("Grog", 20, 100);
+//        warrior.attackEnemy(zombie);
+//
+//        var mage = new Mage("Magic Man", 5, 50);
+//        mage.attackEnemy(zombie);
+//
+//        var archer = new Archer("Legolas", 15, 80);
+//        archer.attackEnemy(zombie);
+//
+//        zombie.attackHero(warrior);
+//        zombie.attackHero(mage);
+//        zombie.attackHero(archer);
 
-        var warrior = new Warrior("Grog", 20, 100);
-        warrior.attackEnemy(enemy);
+//        var zombie = new Zombie("Shaun", 25, 50);
+//        var warrior = new Warrior("Grog", 25, 100);
+//
+//        zombie.useAbility();
+//
+//        warrior.attackEnemy(zombie);
+//        warrior.attackEnemy(zombie);
+//        warrior.attackEnemy(zombie);
+//        warrior.attackEnemy(zombie);
 
-        var mage = new Mage("Magic Man", 5, 50);
-        mage.attackEnemy(enemy);
+        var smorc = new Smorc("AAA", 100, 200);
+        var warrior = new Warrior("Grog", 25, 100);
 
-        var archer = new Archer("Legolas", 15, 80);
-        archer.attackEnemy(enemy);
+        warrior.attackEnemy(smorc);
+        warrior.attackEnemy(smorc);
+        warrior.attackEnemy(smorc);
 
-        enemy.attackHero(warrior);
-        enemy.attackHero(mage);
-        enemy.attackHero(archer);
+        smorc.attackHero(warrior);
+        smorc.attackHero(warrior);
+        smorc.attackHero(warrior);
+
     }
 }

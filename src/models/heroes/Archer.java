@@ -9,7 +9,12 @@ public class Archer extends Hero{
 
     @Override
     public void attackEnemy(Enemy enemy) {
-        System.out.printf("Лучник %s атакует!!!\n", getName());
-        enemy.takeDamage(getStrength());
+        if(enemy.isAlive()) {
+            System.out.printf("Лучник %s атакует!!!\n", getName());
+            enemy.takeDamage(getStrength());
+        }
+        else {
+            System.out.printf("%s мертв!\n", enemy.getName());
+        }
     }
 }
