@@ -3,7 +3,7 @@ package models.heroes;
 import models.enemies.Enemy;
 
 public class Mage extends Hero{
-    private final static int HEAL = 20;
+    private final static int HEAL = 50;
     private final static int HEAL_POINT = 20;
     public Mage(String name, int strength, int health) {
         super(name, strength, health);
@@ -15,10 +15,17 @@ public class Mage extends Hero{
         enemy.takeDamage(getStrength());
     }
 
-    private void useHeal() {
-        if(getHealth() <= (getHealth() * HEAL) / 100) {
-            System.out.printf("Клирик %s кастует лечение и восстанавливает здоровье.\n", getName());
-            setHealth(HEAL_POINT);
+    @Override
+    public void takeDamage(int damage) {
+        int health = getHealth();
+        super.takeDamage(damage);
+        if(isAlive() && getHealth() <= (health * HEAL) / 100) {
+            useHeal();
         }
+    }
+
+    private void useHeal() {
+        System.out.printf("Клирик %s кастует лечение и восстанавливает здоровье.\n\n", getName());
+        setHealth(HEAL_POINT);
     }
 }

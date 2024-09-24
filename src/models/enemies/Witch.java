@@ -9,7 +9,7 @@ public class Witch extends Enemy{
 
     @Override
     public void attackHero(Hero hero) {
-        if(Math.random() >= 0.5) {
+        if(isAlive() && hero.isAlive() && Math.random() >= 0.5) {
             useCurse(hero);
         }
         else {

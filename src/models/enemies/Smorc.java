@@ -19,8 +19,9 @@ public class Smorc extends Enemy{
 
     @Override
     public void takeDamage(int damage) {
+        int health = getHealth();
         super.takeDamage(damage);
-        if(getHealth() <= (getHealth() * EDGE_HEALTH) / 100) {
+        if(getHealth() <= (health * EDGE_HEALTH) / 100) {
             useRage();
         }
     }
