@@ -22,10 +22,23 @@ public abstract class Hero implements Mortal {
         return strength;
     }
 
+    public int getHealth() {
+        return health;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
     public void takeDamage(int damage) {
-        this.health -= damage;
-        System.out.printf("%s получил %d ед.урона. ", name, damage);
-        System.out.printf("У %s осталось здоровья: %d\n\n", name, health);
+        if(isAlive()) {
+            this.health -= damage;
+            System.out.printf("%s получил %d ед.урона. ", name, damage);
+            System.out.printf("У %s осталось здоровья: %d\n\n", name, health);
+        }
+        else {
+            System.out.printf("%s мертв.\n", name);
+        }
     }
 
     @Override

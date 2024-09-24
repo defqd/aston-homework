@@ -9,24 +9,18 @@ public class Witch extends Enemy{
 
     @Override
     public void attackHero(Hero hero) {
-        if(hero.isAlive()) {
-            if (Math.random() >= 0.5) {
-                hero.takeDamage(getStrength());
-                useAbility();
-            }
-            else {
-                System.out.printf("Ведьма %s бьет посохом врага!\n", getName());
-                hero.takeDamage(getStrength());
-            }
+        if(Math.random() >= 0.5) {
+            useCurse(hero);
         }
         else {
-            System.out.printf("%s мертв!\n", hero.getName());
+            System.out.printf("Ведьма %s бьет посохом врага!\n", getName());
+            hero.takeDamage(getStrength());
         }
     }
 
-    @Override
-    public void useAbility() {
-        System.out.printf("Ведьма %s кастует проклятье и воссполняет здоровье в размере наносимого урона.\n", getName());
-        setHealth(getStrength());
+    private void useCurse(Hero hero) {
+        int curse = (hero.getHealth() * 50) / 100;
+        hero.setHealth(curse);
+        System.out.printf("Ведьма %s кастует проклятье. Здоровье %s уменьшено на 50%%.\n", getName(), hero.getName());
     }
 }

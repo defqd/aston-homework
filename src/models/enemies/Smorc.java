@@ -4,6 +4,7 @@ import models.heroes.Hero;
 
 public class Smorc extends Enemy{
     private final static int RAGE = 20;
+    private final static int EDGE_HEALTH = 50;
     private boolean cooldown = false;
 
     public Smorc(String name, int strength, int health) {
@@ -12,25 +13,22 @@ public class Smorc extends Enemy{
 
     @Override
     public void attackHero(Hero hero) {
-        if(hero.isAlive()) {
-            if (Math.random() >= 0.5) {
-                useAbility();
-            }
-            else {
-                System.out.printf("Четкий пацан %s атакует врага!\n", getName());
-                hero.takeDamage(getStrength());
-            }
-        }
-        else {
-            System.out.printf("%s мертв!\n", hero.getName());
-        }
+        System.out.printf("Четкий пацан %s атакует врага!\n", getName());
+        hero.takeDamage(getStrength());
     }
 
     @Override
-    public void useAbility() {
+    public void takeDamage(int damage) {
+        super.takeDamage(damage);
+        if(getHealth() <= (getHealth() * EDGE_HEALTH) / 100) {
+            useRage();
+        }
+    }
+
+    private void useRage() {
         if(!cooldown) {
-            int addHealth = (getHealth() * 20) / 100;
-            int addStrength = (getStrength() * 20) / 100;
+            int addHealth = (getHealth() * RAGE) / 100;
+            int addStrength = (getStrength() * RAGE) / 100;
 
             setHealth(getHealth() + addHealth);
             setStrength(getStrength() + addStrength);

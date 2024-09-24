@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7aee9fc-d43f-475e-8303-c34869d6fbac" name="Changes" comment="feat: add the ability for the enemy to attack the Hero">
-      <change afterPath="$PROJECT_DIR$/src/models/enemies/Smorc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/enemies/Witch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/enemies/Zombie.java" afterDir="false" />
+    <list default="true" id="e7aee9fc-d43f-475e-8303-c34869d6fbac" name="Changes" comment="feat: add multiple types of enemies">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/area/BattleGround.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/area/BattleGround.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/enemies/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/enemies/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/enemies/Smorc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/enemies/Smorc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/enemies/Witch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/enemies/Witch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/enemies/Zombie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/enemies/Zombie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/heroes/Archer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/heroes/Archer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/heroes/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/heroes/Hero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/heroes/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/heroes/Mage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/heroes/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/heroes/Warrior.java" afterDir="false" />
     </list>
@@ -138,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727104955581</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="feat: add multiple types of enemies">
+      <option name="closed" value="true" />
+      <created>1727109905299</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1727109905299</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,6 +172,7 @@
     <MESSAGE value="feat: add BattleGround" />
     <MESSAGE value="feat: add a health indicator to the Hero and the opportunity to die" />
     <MESSAGE value="feat: add the ability for the enemy to attack the Hero" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add the ability for the enemy to attack the Hero" />
+    <MESSAGE value="feat: add multiple types of enemies" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add multiple types of enemies" />
   </component>
 </project>

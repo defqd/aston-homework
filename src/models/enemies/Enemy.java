@@ -35,9 +35,14 @@ public abstract class Enemy implements Mortal {
     }
 
     public void takeDamage(int damage) {
-        this.health -= damage;
-        System.out.printf("%s получил %d ед.урона. ", name, damage);
-        System.out.printf("У %s осталось здоровья: %d\n\n", name, health);
+        if(isAlive()) {
+            this.health -= damage;
+            System.out.printf("%s получил %d ед.урона. ", name, damage);
+            System.out.printf("У %s осталось здоровья: %d\n\n", name, health);
+        }
+        else {
+            System.out.printf("%s мертв.\n", name);
+        }
     }
 
     @Override
@@ -46,5 +51,4 @@ public abstract class Enemy implements Mortal {
     }
 
     public abstract void attackHero(Hero hero);
-    public abstract  void useAbility();
 }

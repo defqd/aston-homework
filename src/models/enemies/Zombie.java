@@ -12,29 +12,19 @@ public class Zombie extends Enemy{
 
     @Override
     public void attackHero(Hero hero) {
-        if(hero.isAlive()) {
-            System.out.printf("Зомби %s атакует врага!\n", getName());
-            hero.takeDamage(getStrength());
-        }
-        else {
-            System.out.printf("%s мертв!\n", hero.getName());
-        }
+        System.out.printf("Зомби %s атакует врага!\n", getName());
+        hero.takeDamage(getStrength());
     }
 
     @Override
     public void takeDamage(int damage) {
         super.takeDamage(damage);
         if(!isAlive()) {
-            useAbility();
+            useResurrection();
         }
     }
 
-    @Override
-    public void useAbility() {
-        if(isAlive()){
-            System.out.println("Я все еще жив...");
-            return;
-        }
+    private void useResurrection() {
         if(Math.random() >= 0.5 && !isResurrection) {
             setHealth(RESURRECTION_POINTS);
 
